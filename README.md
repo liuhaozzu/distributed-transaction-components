@@ -1,5 +1,7 @@
 # distributed-transaction-components
-a distributed transaction component based on two-phase commit protocol
+This is a distributed transaction component based on two-phase commit protocol and MQ.  
+There are a lot of MQ which are available. I choose RocketMQ in the implementation just because I have it in my test environment.  
+If intersted in the components, you are welcome to add some other MQ implementations. It's very simple. What you need to do is just implementing one interface.
 ## create sql
 ```
 CREATE TABLE `test`.`mq_message` (
