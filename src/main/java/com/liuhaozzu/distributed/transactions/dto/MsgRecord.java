@@ -19,6 +19,8 @@ public class MsgRecord {
     private String data;
 
     private int status;
+    private String topic;
+    private String tags;
     private long updateTime;
     private long createTime;
 
@@ -73,6 +75,24 @@ public class MsgRecord {
 
     public MsgRecord setCreateTime(long createTime) {
         this.createTime = createTime;
+        return this;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public MsgRecord setTopic(String topic) {
+        this.topic = topic;
+        return this;
+    }
+
+    public String getTags() {
+        return tags;
+    }
+
+    public MsgRecord setTags(String tags) {
+        this.tags = tags;
         return this;
     }
 }
